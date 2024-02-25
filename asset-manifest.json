@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/interview-assignment/static/css/main.de70bf1d.css",
-    "main.js": "/interview-assignment/static/js/main.75790f0e.js",
-    "static/js/453.81f5aec0.chunk.js": "/interview-assignment/static/js/453.81f5aec0.chunk.js",
-    "static/media/refresh-icon.webp": "/interview-assignment/static/media/refresh-icon.63ec5d9c811d8531345e.webp",
-    "index.html": "/interview-assignment/index.html",
-    "main.de70bf1d.css.map": "/interview-assignment/static/css/main.de70bf1d.css.map",
-    "main.75790f0e.js.map": "/interview-assignment/static/js/main.75790f0e.js.map",
-    "453.81f5aec0.chunk.js.map": "/interview-assignment/static/js/453.81f5aec0.chunk.js.map"
+    "main.css": "/eastvantage-assignment/static/css/main.de70bf1d.css",
+    "main.js": "/eastvantage-assignment/static/js/main.f830e0aa.js",
+    "static/js/453.81f5aec0.chunk.js": "/eastvantage-assignment/static/js/453.81f5aec0.chunk.js",
+    "static/media/refresh-icon.webp": "/eastvantage-assignment/static/media/refresh-icon.63ec5d9c811d8531345e.webp",
+    "index.html": "/eastvantage-assignment/index.html",
+    "main.de70bf1d.css.map": "/eastvantage-assignment/static/css/main.de70bf1d.css.map",
+    "main.f830e0aa.js.map": "/eastvantage-assignment/static/js/main.f830e0aa.js.map",
+    "453.81f5aec0.chunk.js.map": "/eastvantage-assignment/static/js/453.81f5aec0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de70bf1d.css",
-    "static/js/main.75790f0e.js"
+    "static/js/main.f830e0aa.js"
   ]
 }

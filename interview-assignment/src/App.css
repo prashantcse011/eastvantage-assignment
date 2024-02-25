@@ -1,0 +1,161 @@
+.App {
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.CenterDisplay {
+  background-color: white;
+  width: 50%;
+  height: 30vh;
+  transform: translate(40%, 40%);
+  display: flex;
+  flex-flow: column wrap;
+  border: 5px solid #02647e;
+}
+
+.Row {
+  height: 10vh;
+  transform: translate(40%, 70%);
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.ColumnLeft {
+  align-self: center;
+}
+
+.ColumnRight {
+  align-self: center;
+}
+
+span {
+  padding: 8px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.ButtonContainer {
+  position: relative;
+  top: 50%;
+}
+
+.Button {
+  float: right;
+  top: 70px;
+  border-radius: 10px;
+  width: 20%;
+  cursor: pointer;
+  border: 8px solid #02647e;
+  
+}
+
+.App-logo {
+  max-height: 4vh;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+  body {
+    box-sizing: border-box;
+  }
+  .CenterDisplay {
+    box-sizing: border-box;
+    background-color: white;
+    width: 70%;
+    height: 30vh;
+    transform: translate(28%, 40%);
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 10;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border: 2px solid #02647e;
+  }
+
+  .Row {
+    height: 10vh;
+    transform: translate(0%, 0%);
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    align-content: flex-start;
+  }
+
+  .ColumnLeft {
+    align-self: flex-start;
+    flex-shrink: 0;
+  }
+  
+  .ColumnRight {
+    align-self: flex-start;
+    flex-shrink: 2;
+  }
+  
+  span {
+    padding: 2px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .ButtonContainer {
+    position: absolute;
+    top: 115%;
+    float: right;
+    left: 80%;
+  }
+  
+  .Button {
+    float: right;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    border: 5px solid #02647e;
+    
+  }
+  
+  .App-logo {
+    max-height: 4vh;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  
+}
+

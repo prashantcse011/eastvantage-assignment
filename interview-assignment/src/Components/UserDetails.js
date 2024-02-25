@@ -24,6 +24,22 @@ function UserDetails() {
     catch(error) {
       console.error(error);
     }
+  }, []);
+
+  useEffect(() => {
+    try {
+      axios.get('https://randomuser.me/api').then((response) => {
+        localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
+      })
+      apiResponse.current = JSON.parse(localStorage.getItem('data'));
+      const [{name = '', email = ''}]  = apiResponse.current;
+      const {first = '', last = ''} = name;
+      setName(`${first.concat(' ', last) || ''}`);
+      setEmail(email || '');
+    }
+    catch(error) {
+      console.error(error);
+    }
   }, [initiateRefresh]);
 
   return ( 

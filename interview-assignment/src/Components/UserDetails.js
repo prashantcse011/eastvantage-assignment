@@ -16,13 +16,18 @@ function UserDetails() {
       axios.get('https://randomuser.me/api').then((response) => {
         apiResponse = response?.data?.results;
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
+        console.log('11', apiResponse);
+        const [{name = '', email = ''}]  = apiResponse || JSON.parse(localStorage.getItem('data'));
+        const {first = '', last = ''} = name;
+        setName(`${first.concat(' ', last) || ''}`);
+        setEmail(email || '');
       })
       // apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      console.log('11', apiResponse);
-      const [{name = '', email = ''}]  = apiResponse || JSON.parse(localStorage.getItem('data'));
-      const {first = '', last = ''} = name;
-      setName(`${first.concat(' ', last) || ''}`);
-      setEmail(email || '');
+      // console.log('11', apiResponse);
+      // const [{name = '', email = ''}]  = apiResponse || JSON.parse(localStorage.getItem('data'));
+      // const {first = '', last = ''} = name;
+      // setName(`${first.concat(' ', last) || ''}`);
+      // setEmail(email || '');
     }
     catch(error) {
       console.error(error);
@@ -35,13 +40,18 @@ function UserDetails() {
       axios.get('https://randomuser.me/api').then((response) => {
         apiResponse.current = response?.data?.results;
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
+        console.log('11', apiResponse);
+        const [{name = '', email = ''}]  = apiResponse || JSON.parse(localStorage.getItem('data'));
+        const {first = '', last = ''} = name;
+        setName(`${first.concat(' ', last) || ''}`);
+        setEmail(email || '');
       })
       // apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      console.log('11', apiResponse);
-      const [{name = '', email = ''}]  = apiResponse || JSON.parse(localStorage.getItem('data'));
-      const {first = '', last = ''} = name;
-      setName(`${first.concat(' ', last) || ''}`);
-      setEmail(email || '');
+      // console.log('11', apiResponse);
+      // const [{name = '', email = ''}]  = apiResponse || JSON.parse(localStorage.getItem('data'));
+      // const {first = '', last = ''} = name;
+      // setName(`${first.concat(' ', last) || ''}`);
+      // setEmail(email || '');
     }
     catch(error) {
       console.error(error);

@@ -17,7 +17,8 @@ function UserDetails() {
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
       })
       // apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data')) || apiResponse.current;
+      console.log('11', apiResponse.current);
+      const [{name = '', email = ''}]  = apiResponse.current || JSON.parse(localStorage.getItem('data'));
       const {first = '', last = ''} = name;
       setName(`${first.concat(' ', last) || ''}`);
       setEmail(email || '');
@@ -34,7 +35,8 @@ function UserDetails() {
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
       })
       // apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data')) || apiResponse.current;
+      console.log('11', apiResponse.current);
+      const [{name = '', email = ''}]  = apiResponse.current || JSON.parse(localStorage.getItem('data'));
       const {first = '', last = ''} = name;
       setName(`${first.concat(' ', last) || ''}`);
       setEmail(email || '');

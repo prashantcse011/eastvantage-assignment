@@ -9,14 +9,14 @@ function UserDetails() {
   const [ email, setEmail ] = useState('');
   const [ initiateRefresh, setInitiateRefresh ] = useState(1);
 
-  let apiResponse = useRef({});
+  // let apiResponse = useRef({});
   useEffect(() => {
     try {
       axios.get('https://randomuser.me/api').then((response) => {
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
       })
-      apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      const [{name = '', email = ''}]  = apiResponse.current;
+      // apiResponse.current = JSON.parse(localStorage.getItem('data'));
+      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));
       const {first = '', last = ''} = name;
       setName(`${first.concat(' ', last) || ''}`);
       setEmail(email || '');
@@ -31,8 +31,8 @@ function UserDetails() {
       axios.get('https://randomuser.me/api').then((response) => {
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
       })
-      apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      const [{name = '', email = ''}]  = apiResponse.current;
+      // apiResponse.current = JSON.parse(localStorage.getItem('data'));
+      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));;
       const {first = '', last = ''} = name;
       setName(`${first.concat(' ', last) || ''}`);
       setEmail(email || '');

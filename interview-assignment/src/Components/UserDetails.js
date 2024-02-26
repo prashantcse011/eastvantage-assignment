@@ -16,15 +16,23 @@ function UserDetails() {
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
       })
       // apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      console.log('11', JSON.parse(localStorage.getItem('data')), typeof JSON.parse(localStorage.getItem('data')));
-      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));
-      const {first = '', last = ''} = name;
-      setName(`${first.concat(' ', last) || ''}`);
-      setEmail(email || '');
+      // console.log('11', JSON.parse(localStorage.getItem('data')), typeof JSON.parse(localStorage.getItem('data')));
+      // const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));
+      // const {first = '', last = ''} = name;
+      // setName(`${first.concat(' ', last) || ''}`);
+      // setEmail(email || '');
     }
     catch(error) {
       console.error(error);
     }
+  }, []);
+
+  useEffect(() => {
+    console.log('11', JSON.parse(localStorage.getItem('data')), typeof JSON.parse(localStorage.getItem('data')));
+      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));
+      const {first = '', last = ''} = name;
+      setName(`${first.concat(' ', last) || ''}`);
+      setEmail(email || '');
   }, []);
 
   useEffect(() => {
@@ -33,15 +41,23 @@ function UserDetails() {
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
       })
       // apiResponse.current = JSON.parse(localStorage.getItem('data'));
-      console.log('11', JSON.parse(localStorage.getItem('data')), typeof JSON.parse(localStorage.getItem('data')));
-      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));;
-      const {first = '', last = ''} = name;
-      setName(`${first.concat(' ', last) || ''}`);
-      setEmail(email || '');
+      // console.log('11', JSON.parse(localStorage.getItem('data')), typeof JSON.parse(localStorage.getItem('data')));
+      // const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));;
+      // const {first = '', last = ''} = name;
+      // setName(`${first.concat(' ', last) || ''}`);
+      // setEmail(email || '');
     }
     catch(error) {
       console.error(error);
     }
+  }, [initiateRefresh]);
+
+  useEffect(() => {
+    console.log('11', JSON.parse(localStorage.getItem('data')), typeof JSON.parse(localStorage.getItem('data')));
+      const [{name = '', email = ''}]  = JSON.parse(localStorage.getItem('data'));
+      const {first = '', last = ''} = name;
+      setName(`${first.concat(' ', last) || ''}`);
+      setEmail(email || '');
   }, [initiateRefresh]);
 
   return ( 

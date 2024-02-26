@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/eastvantage-assignment/static/css/main.de70bf1d.css",
-    "main.js": "/eastvantage-assignment/static/js/main.685b5cc4.js",
+    "main.js": "/eastvantage-assignment/static/js/main.75556094.js",
     "static/js/453.81f5aec0.chunk.js": "/eastvantage-assignment/static/js/453.81f5aec0.chunk.js",
     "static/media/refresh-icon.webp": "/eastvantage-assignment/static/media/refresh-icon.63ec5d9c811d8531345e.webp",
     "index.html": "/eastvantage-assignment/index.html",
     "main.de70bf1d.css.map": "/eastvantage-assignment/static/css/main.de70bf1d.css.map",
-    "main.685b5cc4.js.map": "/eastvantage-assignment/static/js/main.685b5cc4.js.map",
+    "main.75556094.js.map": "/eastvantage-assignment/static/js/main.75556094.js.map",
     "453.81f5aec0.chunk.js.map": "/eastvantage-assignment/static/js/453.81f5aec0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de70bf1d.css",
-    "static/js/main.685b5cc4.js"
+    "static/js/main.75556094.js"
   ]
 }

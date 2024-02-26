@@ -38,7 +38,7 @@ function UserDetails() {
     let apiResponse;
     try {
       axios.get('https://randomuser.me/api').then((response) => {
-        apiResponse.current = response?.data?.results;
+        apiResponse = response?.data?.results;
         localStorage.setItem('data', JSON.stringify(response?.data?.results) || '');
         console.log('11', apiResponse);
         const [{name = '', email = ''}]  = apiResponse || JSON.parse(localStorage.getItem('data'));
